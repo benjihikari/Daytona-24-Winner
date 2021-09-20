@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>24h de Daytona | QUIZ!!!</title>
+</head>
+<body>
+    <header>
+        <img src="https://www.drivepetty.com/wp-content/uploads/2017/07/Daytona-International-Speedway-Logo-White-Text.png" alt="daytona-logo">
+    </header>
+    <main>
+        <section class="quiz">
+            <article class="quiz__game">
+                <h3>Buscador de ganadores de las 24h de Daytona <span></span></h3>
+                <p id="carWinner"></p>
+                <form>
+                    <label for="Input">Introduce el vehículo a determinar:</label>
+                    <input type="text" id="Input" class="inpt" placeholder="Auto...">
+                    <button type="button" class="boton" onclick="DaytonaWinners()">Comprobar...</button>
+                    <p id="winner" class="winner"></p>
+                    <div class="quiz__game--result">
+                        <p id="outcome__yes" class="outcome__yes"></p>
+                        <p id="outcome__not" class="outcome__not"></p>
+                    </div>
+                </form>
+                <p id="sucess" class="quiz__game--sucess"></p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <ul class="footer__social--media">
+            <li>
+                <a href="#" class="social--media__inst span">Instagram <span></span></a>
+            </li>
+            <li>
+                <a href="#" class="social--media__platz span">Platzi <span></span></a>
+            </li>
+        </ul>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>

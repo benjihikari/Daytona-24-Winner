@@ -1,0 +1,200 @@
+/*Variables*/
+:root {
+    --quiz-black: rgb(36, 36, 36);
+    --quiz-game-black: rgb(65, 65, 65);
+    --quiz-title: rgb(234, 251, 253);
+    --correct-green: rgb(0, 197, 0);
+    --platzi-green: #99c93f;
+    --incorrect-red: rgba(255, 30, 30, 0.877);
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--quiz-black);
+}
+a {
+    text-decoration: none;
+}
+header {
+    width: 100%;
+    min-width: 320px;
+    height: 120px;
+    margin-bottom: 70px;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header img {
+    width: 270px;
+    height: 270px;
+    border: none;
+}
+main {
+    width: 100%;
+    height: auto;
+}
+.quiz {
+    width: 100%;
+    min-width: 320px;
+    min-height: 300px;
+    height: auto;
+    padding: 16px 21px;
+}
+.quiz__game {
+    min-width: 210px;
+    max-width: 340px;
+    height: auto;
+    min-height: 115px;
+    margin: 0 auto;
+    padding: 24px 12px;
+    background-color: var(--quiz-game-black);
+    border-radius: 25px;
+    box-shadow: 0 2px 6px white;
+}
+.quiz__game h3 {
+    color: var(--quiz-title);
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 10px 0;
+}
+.quiz__game h3 span {
+    width: 54px;
+    height: 30px;
+    display: inline-block;
+    background-image: url("https://img.favpng.com/12/25/15/2013-nascar-sprint-cup-series-2014-nascar-sprint-cup-series-advance-auto-parts-clash-daytona-international-speedway-daytona-500-png-favpng-secWMT46j1UDeszyZwrUPZkTL_t.jpg");
+    vertical-align: middle;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.quiz__game p {
+    color: var(--incorrect-red);
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 8px 0;
+    text-align: center;
+}
+.quiz__game form {
+    width: 100%;
+    height: auto;
+    padding: 6px 7px;
+    margin: 10px 0;
+}
+.quiz__game label {
+    color: yellow;
+    font-size: 1.2rem;
+    margin: 21px 0;
+    padding: 6px;
+}
+.quiz__game .inpt {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 88%;
+    height: 27px;
+    margin: 8px 6px;
+    padding: 7px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    color: whitesmoke;
+}
+.quiz__game button {
+    background-color: var(--quiz-black);
+    border: none;
+    border-radius: 32px;
+    width: 120px;
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 4px;
+    cursor: pointer;
+    color:rgb(62, 62, 252);
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    transition: 0.8s;
+}
+.boton:hover {
+    background-color: turquoise;
+    color: red;
+}
+.quiz__game .winner {
+    color: yellow;
+    margin-top: 6px;
+}
+.quiz__game--result {
+    width: 100%;
+    height: auto;
+    margin-top: 12px;
+    padding: 6px;
+}
+.quiz__game--result p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+    text-align: start;
+}
+.quiz__game--result .outcome__yes {
+    color: var(--correct-green);
+}
+.quiz__game--result .outcome__not {
+    color: var(--incorrect-red);
+}
+.quiz__game .quiz__game--sucess {
+    color: var(--quiz-title);
+    font-weight: bold;
+}
+footer {
+    width: 100%;
+    min-width: 320px;
+    height: 170px;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer ul {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2rem;
+    list-style: none;
+    display: flex;
+}
+footer li {
+    padding: 10px 15px;
+    margin: 15px 64px;
+}
+footer .social--media__inst {
+    color: rgba(255, 6, 255, 0.733);
+}
+footer .social--media__platz {
+    color: var(--platzi-green);
+}
+footer a span {
+    width: 33px;
+    height: 33px;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.social--media__inst span {
+    background-image: url("https://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png");
+}
+.social--media__platz span {
+    background-image: url("https://static.platzi.com/media/users-badges/team_badge.png");
+    border-radius: 5px;
+}
